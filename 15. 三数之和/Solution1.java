@@ -17,11 +17,14 @@ import java.util.List;
  */
  
 
-//暴力解法
+/**
+ *   暴力解法 ： 三层循环穷举所有情况
+ *   295 / 313 个通过测试用例
+ */
 public class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> lists = new ArrayList<>();   //结果集
-        for (int i = 0; i < nums.length-2; ++i){         //三层循环穷举素有情况
+        for (int i = 0; i < nums.length-2; ++i){         //三层循环穷举所有情况
             for (int j = i + 1; j < nums.length-1; ++j){
                 for (int k = j + 1; k < nums.length; k++){
                     if (nums[i] + nums[j] + nums[k] == 0){

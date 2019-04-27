@@ -15,7 +15,9 @@ import java.util.List;
  *   [-1, -1, 2]
  * ]
  */
+ 
 
+//暴力解法
 public class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> lists = new ArrayList<>();   //结果集
